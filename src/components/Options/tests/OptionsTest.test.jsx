@@ -2,9 +2,9 @@ import { fireEvent, render, screen } from "@testing-library/react";
 import Options from "../index";
 
 test("should have default values in form", () => {
-	render(<Options />);
+	render(<Options currency="INR" />);
 
-	const currencyOptions = screen.getByText("INR");
+	const currencyOptions = screen.getByTestId("currency-inr");
 	const startingBalance = screen.getByPlaceholderText(
 		"Enter initial balance"
 	);
@@ -26,15 +26,15 @@ test("should have default values in form", () => {
 });
 
 test("should return total amount", () => {
-	var total = 0;
-	const setTotal = (value) => {
-		total = value;
+	var total;
+	const setTotal = (result) => {
+		total = result;
 	};
 
-	render(<Options setTotal={setTotal} />);
+	render(<Options setTotal={setTotal} currency="INR" />);
 
 	const calculateButton = screen.getByRole("button", { name: /Calculate/i });
 	fireEvent.click(calculateButton);
 
-	expect(total).toBe(2327.99);
+	expect(total).toBe(2327);
 });

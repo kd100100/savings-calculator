@@ -1,0 +1,257 @@
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  background-color: #f7f7f9;
+}
+
+.calculator {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 7px 7px 20px 5px rgba(0, 0, 0, 0.1), -7px -7px 20px 5px rgba(255, 255, 255, 0.868);
+          box-shadow: 7px 7px 20px 5px rgba(0, 0, 0, 0.1), -7px -7px 20px 5px rgba(255, 255, 255, 0.868);
+  border-radius: 16px;
+  color: #9aa1ab;
+  padding: 5vh 3vw;
+}
+
+.total {
+  text-align: center;
+  border-right: 3px solid #9aa1ab62;
+}
+
+.total img {
+  width: 70%;
+}
+
+.total h3 {
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin-bottom: 0;
+  opacity: 0.75;
+}
+
+.total h1 {
+  margin-top: 20px;
+  font-size: 4rem;
+  background-image: -webkit-gradient(linear, left top, right top, from(#9ae0a2), to(#48c9be));
+  background-image: linear-gradient(to right, #9ae0a2, #48c9be);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.options {
+  margin-left: 100px;
+}
+
+.currency-options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 2vh;
+  -webkit-box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.1), -5px -5px 3px 2px rgba(255, 255, 255, 0.868);
+          box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.1), -5px -5px 3px 2px rgba(255, 255, 255, 0.868);
+  border-radius: 50px;
+  font-weight: 800;
+  padding: 0px 10px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.currency-options .currency {
+  width: 50%;
+  text-align: center;
+  color: #9aa1ab7f;
+}
+
+.currency-options .currency-option-selected {
+  -webkit-box-shadow: inset 3px 3px 3px 2px rgba(0, 0, 0, 0.1), inset -5px -5px 3px 2px rgba(255, 255, 255, 0.868);
+          box-shadow: inset 3px 3px 3px 2px rgba(0, 0, 0, 0.1), inset -5px -5px 3px 2px rgba(255, 255, 255, 0.868);
+  padding: 7px 0;
+  border-radius: 50px;
+}
+
+.currency-options .currency-option-selected h4 {
+  margin: 7px 0;
+  background-image: -webkit-gradient(linear, left top, right top, from(#9ae0a2), to(#48c9be));
+  background-image: linear-gradient(to right, #9ae0a2, #48c9be);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.form-group {
+  font-weight: 800;
+  margin-bottom: 2vh;
+}
+
+.form-group label {
+  font-size: small;
+  margin-left: 10px;
+}
+
+.form-group .input-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-shadow: inset 3px 3px 3px 2px rgba(0, 0, 0, 0.1), inset -5px -5px 3px 2px rgba(255, 255, 255, 0.868);
+          box-shadow: inset 3px 3px 3px 2px rgba(0, 0, 0, 0.1), inset -5px -5px 3px 2px rgba(255, 255, 255, 0.868);
+  border-radius: 10px;
+  padding: 10px 15px;
+  margin: 10px 0;
+  width: 250px;
+  font-size: larger;
+}
+
+.form-group .input-group .form-control {
+  background-color: transparent;
+  border: none;
+  color: #9aa1ab;
+  font-size: inherit;
+  font-weight: inherit;
+  width: 100%;
+}
+
+.form-group .input-group .form-control:focus {
+  outline: none;
+}
+
+.form-group .input-group .form-control::-webkit-input-placeholder {
+  color: #9aa1ab7f;
+}
+
+.form-group .input-group .form-control:-ms-input-placeholder {
+  color: #9aa1ab7f;
+}
+
+.form-group .input-group .form-control::-ms-input-placeholder {
+  color: #9aa1ab7f;
+}
+
+.form-group .input-group .form-control::placeholder {
+  color: #9aa1ab7f;
+}
+
+.period-choice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 2vh;
+  margin-left: 10px;
+}
+
+.period-choice .form-check {
+  margin-right: 10px;
+}
+
+.period-choice .form-check label {
+  font-size: medium;
+  font-weight: 800;
+}
+
+.period-choice .form-check input {
+  margin-right: 10px;
+}
+
+.period-choice .form-check input:checked,
+.period-choice .form-check input:not(:checked) {
+  position: absolute;
+  left: -9999px;
+}
+
+.period-choice .form-check input:checked + label,
+.period-choice .form-check input:not(:checked) + label {
+  position: relative;
+  padding-left: 28px;
+  cursor: pointer;
+}
+
+.period-choice .form-check input:checked + label:before,
+.period-choice .form-check input:not(:checked) + label:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 18px;
+  height: 18px;
+  -webkit-box-shadow: 3px 3px 2px 2px rgba(0, 0, 0, 0.1), -3px -3px 2px 2px rgba(255, 255, 255, 0.868);
+          box-shadow: 3px 3px 2px 2px rgba(0, 0, 0, 0.1), -3px -3px 2px 2px rgba(255, 255, 255, 0.868);
+  border-radius: 100%;
+  background: #fff;
+}
+
+.period-choice .form-check input:checked + label:after,
+.period-choice .form-check input:not(:checked) + label:after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: -webkit-gradient(linear, left top, right top, from(#9ae0a2), to(#48c9be));
+  background: linear-gradient(to right, #9ae0a2, #48c9be);
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  border-radius: 100%;
+  -webkit-transition: all 0.2s ease;
+  -webkit-box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
+}
+
+.period-choice .form-check input:not(:checked) + label:after {
+  opacity: 0;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+
+.period-choice .form-check input:checked + label:after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.calculate-button {
+  width: 100%;
+  background: -webkit-gradient(linear, left top, right top, from(#9ae0a2), to(#48c9be));
+  background: linear-gradient(to right, #9ae0a2, #48c9be);
+  border: none;
+  color: white;
+  font-size: larger;
+  font-weight: 800;
+  padding: 15px 15px;
+  margin: 10px 0;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,13 +1,14 @@
 import React, { useState } from "react";
 import { calculateTotal } from "../../utils/calculate";
 
-function Options({ setTotal }) {
-	const [currencyOption, setCurrencyOption] = useState("INR");
+function Options({ setTotal, currency, setCurrency }) {
 	const [startingBalance, setStartingBalance] = useState(1000);
 	const [monthlyContribution, setMonthlyContribution] = useState(100);
 	const [period, setPeriod] = useState(1);
 	const [periodChoice, setPeriodChoice] = useState("Years");
 	const [annualInterest, setAnnualInterest] = useState(8);
+
+	console.log(currency === "INR");
 
 	const handleSubmit = (event) => {
 		event.preventDefault();
@@ -28,30 +29,30 @@ function Options({ setTotal }) {
 			<div className="currency-options">
 				<div
 					className={`currency ${
-						currencyOption === "INR"
-							? "currency-option-selected"
-							: ""
+						currency === "INR" ? "currency-option-selected" : ""
 					}`}
-					onClick={() => setCurrencyOption("INR")}
+					onClick={() => setCurrency("INR")}
+					data-testid="currency-inr"
 				>
-					INR
+					<h4>INR</h4>
 				</div>
 				<div
 					className={`currency ${
-						currencyOption === "USD"
-							? "currency-option-selected"
-							: ""
+						currency === "USD" ? "currency-option-selected" : ""
 					}`}
-					onClick={() => setCurrencyOption("USD")}
+					onClick={() => setCurrency("USD")}
+					data-testid="currency-usd"
 				>
-					USD
+					<h4>USD</h4>
 				</div>
 			</div>
 			<form>
 				<div className="form-group">
 					<label htmlFor="starting-balance">Starting Balance:</label>
 					<div className="input-group">
-						<div className="input-group-prepend">₹</div>
+						<div className="input-group-prepend">
+							{currency === "INR" ? "₹" : "$"}
+						</div>
 						<input
 							type="number"
 							className="form-control"
@@ -67,7 +68,9 @@ function Options({ setTotal }) {
 						Monthly Contribution:
 					</label>
 					<div className="input-group">
-						<div className="input-group-prepend">₹</div>
+						<div className="input-group-prepend">
+							{currency === "INR" ? "₹" : "$"}
+						</div>
 						<input
 							type="number"
 							className="form-control"
