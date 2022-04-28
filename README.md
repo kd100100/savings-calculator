@@ -1,5 +1,9 @@
 # Savings Caluclator
 
+### Focus: React, TDD, Clean Code
+
+### Output
+
 ![](output.gif)
 
 #### UI Design Credits: <b>Mariana Konstantinova</b>
