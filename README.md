@@ -2,7 +2,7 @@
 
 ### Focus: React, TDD, Clean Code
 
-### Output
+### Output:
 
 ![](output.gif)
 
