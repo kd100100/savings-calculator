@@ -1,0 +1,101 @@
+@media screen and (max-width: 1200px) {
+  .calculator {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .options {
+    margin-left: 70px;
+    margin-right: 35px;
+  }
+  .form-group .input-group {
+    width: 175px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .calculator {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .options {
+    margin: 0;
+    margin-bottom: 30px;
+  }
+  .total {
+    width: 100%;
+    border: none;
+    border-top: 3px solid #9aa1ab62;
+  }
+  .total img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .calculator {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    padding: 0%;
+  }
+  .options {
+    margin-bottom: 20px;
+  }
+  .total h3 {
+    font-size: 1.2rem;
+  }
+  .total h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0;
+  }
+  .currency-options {
+    font-weight: 600;
+  }
+  .currency-options h4 {
+    font-size: 0.9rem;
+    margin: 12px 0;
+  }
+  .currency-options .currency-option-selected {
+    padding: 5px 0;
+  }
+  .currency-options .currency-option-selected h4 {
+    margin: 1px 0;
+  }
+  .form-group {
+    font-weight: 600;
+  }
+  .form-group label {
+    font-size: small;
+    margin-left: 10px;
+  }
+  .form-group .input-group {
+    padding: 10px 15px;
+    margin: 7px 0;
+    width: 250px;
+    font-size: large;
+  }
+  .form-group .input-group .form-control {
+    width: 100%;
+  }
+  .period-choice {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 2vh;
+    margin-left: 10px;
+  }
+  .period-choice .form-check label {
+    font-size: small;
+    font-weight: 600;
+  }
+  .calculate-button {
+    font-size: large;
+    font-weight: 600;
+    padding: 10px 15px;
+    margin: 7px 0;
+  }
+}
+/*# sourceMappingURL=responsiveness.css.map */

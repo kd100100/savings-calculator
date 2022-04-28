@@ -1,0 +1,105 @@
+// Devices below 1200px
+@media screen and (max-width: 1200px) {
+	.calculator {
+		width: 80%;
+	}
+}
+
+// Devices below 992px
+@media screen and (max-width: 992px) {
+	.options {
+		margin-left: 70px;
+		margin-right: 35px;
+	}
+	.form-group {
+		.input-group {
+			width: 175px;
+		}
+	}
+}
+
+// Devices below 768px
+@media screen and (max-width: 768px) {
+	.calculator {
+		flex-direction: column-reverse;
+	}
+	.options {
+		margin: 0;
+		margin-bottom: 30px;
+	}
+	.total {
+		width: 100%;
+		border: none;
+		border-top: 3px solid #9aa1ab62;
+		img {
+			display: none;
+		}
+	}
+}
+
+// Devices below 600px
+@media screen and (max-width: 600px) {
+	.calculator {
+		box-shadow: none;
+		padding: 0%;
+	}
+	.options {
+		margin-bottom: 20px;
+	}
+	.total {
+		h3 {
+			font-size: 1.2rem;
+		}
+		h1 {
+			font-size: 2.5rem;
+			margin-bottom: 0;
+		}
+	}
+	.currency-options {
+		font-weight: 600;
+		h4 {
+			font-size: 0.9rem;
+			margin: 12px 0;
+		}
+		.currency-option-selected {
+			padding: 5px 0;
+			h4 {
+				margin: 1px 0;
+			}
+		}
+	}
+	.form-group {
+		font-weight: 600;
+		label {
+			font-size: small;
+			margin-left: 10px;
+		}
+		.input-group {
+			padding: 10px 15px;
+			margin: 7px 0;
+			width: 250px;
+			font-size: large;
+			.form-control {
+				width: 100%;
+			}
+		}
+	}
+	.period-choice {
+		display: flex;
+		margin-bottom: 2vh;
+		margin-left: 10px;
+		.form-check {
+			label {
+				font-size: small;
+				font-weight: 600;
+			}
+		}
+	}
+
+	.calculate-button {
+		font-size: large;
+		font-weight: 600;
+		padding: 10px 15px;
+		margin: 7px 0;
+	}
+}

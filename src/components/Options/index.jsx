@@ -8,8 +8,6 @@ function Options({ setTotal, currency, setCurrency }) {
 	const [periodChoice, setPeriodChoice] = useState("Years");
 	const [annualInterest, setAnnualInterest] = useState(8);
 
-	console.log(currency === "INR");
-
 	const handleSubmit = (event) => {
 		event.preventDefault();
 
